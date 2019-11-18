@@ -1,0 +1,355 @@
+
+/******************************/
+/* BASIC SETUP */
+/******************************/
+
+/*reusable color: #63d488*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #6F6E6E;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+
+.row {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+
+section {
+padding: 0px 0px 80px 0px;
+}
+
+
+nav {
+   background: #333;
+}
+
+
+
+header {
+    background: #fff;
+    height: 100vh; 
+    background-size: cover; 
+    background-position: center; 
+
+}
+
+
+.header-line {
+  width: 100%;
+  background-color: #63d488;
+  height: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
+@keyframes namePopUp {
+    
+/* From */
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+
+/* To */
+    100% {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
+
+.hero-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0px solid black;
+    color: #454545;
+
+}
+
+.hero-text-name {
+  color: #E31B6D;
+  font-family: 'Raleway', sans-serif;
+  animation-name: namePopUp;
+  animation-duration: 2s;
+
+}
+
+.hero-text-love {
+  color: #E31B6D;
+}
+
+.h1-top {
+  font-size: 250%;
+  margin-bottom: 10px;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+
+.h1-bottom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 170%;
+    margin-top: 10px;
+    font-family: 'Raleway', sans-serif;
+    color: #454545;
+
+}
+
+.h1-bottom::after {
+    content: " ";
+    display: block;
+    height: 1px;
+    width: 690px;
+    background-color: #63d488;
+    margin: 0 auto; /* puts the element in the center of the page */
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+.btn {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: 0.5s;
+}
+
+.btn:link,
+.btn:visited {
+    background: #049fbb;
+    font-weight: 350;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid rgba(4,159,187,.7);
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 90%;
+    opacity: 0.8;
+}
+
+.btn:hover,
+.btn:active {
+    border: 1px solid rgba(4,159,187,.7);
+    background-color: rgba(4,159,187,.7);
+    color: #fff;
+    transition: 0.5s;
+}
+
+
+/* arrow on the button */
+
+.fa-arrow-right {
+  transition: .3s;
+  padding-left: 15px;
+}
+
+
+.btn:hover .fa-arrow-right {
+  transition: .3s;
+  transform: translateX(10px) translateY(-5px) rotate(90deg);
+}
+
+
+/* NAVIGATION */
+
+
+.myImage {
+    float: left;
+    margin: 10px 10px 10px 0;
+    width: 75px;
+    height: 75px;  
+    border-radius: 50%;
+}
+
+
+.logo-text {
+  display: inline-block;
+  margin-top: 24px;
+  margin-left: 10px;
+  font-size: 100%;
+}
+
+.logo-text a {
+  transition: color 0.2s;
+  text-decoration: none;
+  color: #6F6E6E;
+}
+
+.logo-text a:hover {
+  color: #D44638;
+}
+
+
+.logo-text-2 {
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 10px;
+  font-size: 70%;
+  color: #A4A4A4;
+}
+
+.logo-text-2 a {
+  transition: color 0.2s;
+  text-decoration: none;
+  color: #A4A4A4;
+}
+
+
+.logo-text-2 a:hover {
+  color: #6cc644;
+}
+
+.main-nav {
+    border: 0px solid black;
+    float: right;
+    margin-top: 47px;
+    font-size: 95%;
+}
+
+.main-nav li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 100%;
+}
+
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    text-decoration: none;
+    color: #6F6E6E;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 10px;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    color: #63d488;
+    transition: 0.3s;
+}
+
+
+/* ABOUT ME SECTION*/
+
+
+.about {
+  background: #F4F4F4;
+}
+
+h2 {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 30px;
+
+}
+
+
+h2::after {
+    content: " ";
+    display: block;
+    height: 2px;
+    width: 100px;
+    background-color: #049fbb;
+    margin: 0 auto; /* puts the element in the center of the page */
+    margin-top: 30px;
+}
+
+
+
+.fa-laptop-code,
+.fa-brain,
+.fa-cogs,
+.fa-users {
+  color: #049fbb;
+  font-size: 450%;
+  text-align: center;
+  margin-bottom: 13px;
+}
+
+
+h3 {
+  margin-top: 7px;
+  margin-bottom: 13px;
+  color: #504F4F;
+}
+
+
+.box {
+  text-align: center;
+}
+
+.box p {
+    font-size: 85%;
+    line-height: 145%;
+    color: #868686;
+}
+
+
+/* SCROLL TO TOP */
+
+#myBtn {
+   display: none; /* Hidden by default */
+   position: fixed; /* Fixed/sticky position */
+   bottom: 20px; /* Place the button at the bottom of the page */
+   right: 20px; /* Place the button 30px from the right */
+   z-index: 99; /* Make sure it does not overlap */
+   outline: none;
+   background-color: #fff;
+   color: #049fbb;
+   cursor: pointer;
+   width: 40px;
+   height: 40px;
+   border-radius: 20px;
+   padding-top: 5px;
+   font-size: 170%;
+   font-weight: 600;
+   text-align: center;
+   transition: 0.4s;
+   box-shadow: 0.1px 1px 5px #049fbb;
+   border: 0px solid black;
+   padding-bottom: 20px; /* Some padding */
+   font-family: 'Lora', serif;
+}
+
+#myBtn:hover {
+  background-color: #049fbb; /* Add a dark-grey background on hover */
+  color: #fff;
+  box-shadow: 0.1px 1px 5px #049fbb;  
+}
+
+
+
