@@ -289,11 +289,10 @@ h2::after {
 }
 
 
-
 .fa-laptop-code,
 .fa-brain,
-.fa-cogs,
-.fa-users {
+.fa-users,
+.fa-balance-scale {
   color: #049fbb;
   font-size: 450%;
   text-align: center;
@@ -305,6 +304,9 @@ h3 {
   margin-top: 7px;
   margin-bottom: 13px;
   color: #504F4F;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 100%;
 }
 
 
