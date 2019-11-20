@@ -284,7 +284,7 @@ h2::after {
     height: 2px;
     width: 100px;
     background-color: #049fbb;
-    margin: 0 auto; /* puts the element in the center of the page */
+    margin: 0 auto; 
     margin-top: 30px;
 }
 
@@ -321,14 +321,79 @@ h3 {
 }
 
 
+
+
+
+/* FOOTER SECTION */
+
+
+footer {
+  padding: 30px;
+  background: #333;
+}
+
+
+.social-icons {
+  margin: 0 auto;
+  border: 0px solid white;
+  text-align: center;
+}
+
+
+.social-icons li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 7px;
+}
+
+
+
+.fa-linkedin,
+.fa-github-square,
+.fa-envelope {
+  color: #6B6767;
+  font-size: 180%;
+  transition: 0.2s;
+}
+
+
+.fa-linkedin:hover {
+  color: #0077b5;
+}
+
+
+.fa-github-square:hover {
+  color: #CA5D1F;
+}
+
+.fa-envelope:hover {
+  color: #D33829;
+}
+ 
+
+.copyright p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 80%;
+  text-transform: uppercase;
+  font-family: 'Source Code Pro', monospace;
+
+}
+
+.footer-year {
+  color: #E31B6D;
+}
+
+
+
 /* SCROLL TO TOP */
 
 #myBtn {
-   display: none; /* Hidden by default */
-   position: fixed; /* Fixed/sticky position */
-   bottom: 20px; /* Place the button at the bottom of the page */
-   right: 20px; /* Place the button 30px from the right */
-   z-index: 99; /* Make sure it does not overlap */
+   display: none; 
+   position: fixed; 
+   bottom: 20px; 
+   right: 20px; 
+   z-index: 99; 
    outline: none;
    background-color: #fff;
    color: #049fbb;
@@ -343,12 +408,12 @@ h3 {
    transition: 0.4s;
    box-shadow: 0.1px 1px 5px #049fbb;
    border: 0px solid black;
-   padding-bottom: 20px; /* Some padding */
+   padding-bottom: 20px; 
    font-family: 'Lora', serif;
 }
 
 #myBtn:hover {
-  background-color: #049fbb; /* Add a dark-grey background on hover */
+  background-color: #049fbb;
   color: #fff;
   box-shadow: 0.1px 1px 5px #049fbb;  
 }
