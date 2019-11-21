@@ -465,7 +465,7 @@ h3 {
 }
 
 .skills-set {
-  border: 0px solid black;
+  border: 1px solid black;
   margin: 0 auto;
   width: 100%;
   text-align: center;
@@ -474,7 +474,6 @@ h3 {
 .skills-set li {
   border: 0px solid black;
   display: inline-block;
-  margin-right: 50px;
   padding: 8px;
   font-size: 330%;
 }
@@ -512,6 +511,8 @@ h3 {
 .fa-database,
 .fa-github,
 .fa-sass {
+  margin-right: 120px;
+  width: 0;
   transition: .5s ease;
   opacity: .7;
 }
