@@ -93,12 +93,23 @@ header {
 }
 
 .hero-text-name {
-  color: #0CAF18;
   font-family: 'Raleway', sans-serif;
   animation-name: namePopUp;
   animation-duration: 2s;
 
 }
+
+.hero-text-name a:hover {
+  color: #5B4E4E;
+}
+
+
+.hero-text-name a {
+  color: #454545;
+  text-decoration: none;
+}
+
+
 
 .hero-text-love {
   color: #E31B6D;
@@ -131,7 +142,7 @@ header {
     height: 1px;
     width: 690px;
     background-color: #63d488;
-    margin: 0 auto; /* puts the element in the center of the page */
+    margin: 0 auto;
     margin-top: 30px;
     text-align: center;
 }
@@ -144,6 +155,8 @@ header {
     transform: translate(-50%, -50%);
     text-align: center;
     transition: 0.5s;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: .5px;
 }
 
 .btn:link,
@@ -153,7 +166,6 @@ header {
     text-decoration: none;
     color: #fff;
     border: 1px solid rgba(4,159,187,.7);
-    border-radius: 5px;
     padding: 10px 20px;
     font-weight: 600;
     margin-top: 10px;
@@ -368,7 +380,7 @@ h3 {
 
 .projectBox img {
   width: 100%;
-  opacity: 0.7;
+  opacity: 0.85;
   height: auto;
   transition: .5s;
 }
@@ -455,7 +467,7 @@ h3 {
 .skills-set {
   border: 0px solid black;
   margin: 0 auto;
-  width: 70%;
+  width: 100%;
   text-align: center;
 }
 
