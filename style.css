@@ -506,13 +506,18 @@ h3 {
   color: #E715E5;
 }
 
+.fa-bootstrap {
+  color: #f783ac;
+}
+
 
 .fa-html5,
 .fa-css3-alt,
 .fa-js,
 .fa-database,
 .fa-github,
-.fa-sass {
+.fa-sass,
+.fa-bootstrap {
   margin-right: 120px;
   width: 0;
   transition: .5s ease;
@@ -525,7 +530,8 @@ h3 {
 .fa-js:hover,
 .fa-database:hover,
 .fa-github:hover,
-.fa-sass:hover
+.fa-sass:hover,
+.fa-bootstrap:hover
  {
   box-shadow: 10px -10px 10px #ccc;
   transition: .5s ease;
