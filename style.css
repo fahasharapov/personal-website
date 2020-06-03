@@ -157,6 +157,7 @@ header {
     transition: 0.5s;
     font-family: 'Raleway', sans-serif;
     letter-spacing: .5px;
+    border-radius: 5px;
 }
 
 .btn:link,
@@ -175,8 +176,8 @@ header {
 
 .btn:hover,
 .btn:active {
-    border: 1px solid rgba(4,159,187,.7);
-    background-color: rgba(4,159,187,.7);
+    border-color: #06cc47;
+    background-color: #06cc47;
     color: #fff;
     transition: 0.5s;
 }
@@ -250,6 +251,7 @@ header {
     float: right;
     margin-top: 47px;
     font-size: 95%;
+    text-transform: uppercase;
 }
 
 .main-nav li {
